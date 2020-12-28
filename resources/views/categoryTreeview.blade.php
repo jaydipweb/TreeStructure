@@ -20,7 +20,9 @@
 <body>
 <div id="myTree" class="container main-box" style="margin-top:30px;width:50%;margin-left:25%; border: 2px solid black; padding: 10px">
     <button class="btn btn-success" id="parentCategory" data-toggle="modal" data-target="#parantCatagoryModal">Add New Category</button><br><hr>
-    <div id="alert_message" hidden>Your Data Successfully Added</div>
+    <div id="alert_message_add" hidden>Your Data Successfully Added</div>
+    <div id="alert_message_edit" hidden>Your Data Successfully Edited</div>
+    <div id="alert_message_delete" hidden>Your Data Successfully Deleted</div>
     <div id="error_message" hidden>Please Fillup Name Fields</div>
     <div class="row">
         <div class="col-md-12">
@@ -69,7 +71,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Add Category Name</h4>
+                        <h4 class="modal-title">Add SubCategory Name</h4>
                     </div>
                     <div class="modal-body">
                         <lable>Enter Name</lable>

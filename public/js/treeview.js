@@ -96,9 +96,11 @@ $('#addCategoryBtn').on("click",function(){
       success: (data) => {
           console.log("Add success");
           $("#subCatagoryModal").modal('hide');
-          $("#alert_message").addClass('alert alert-success');
-          $("#alert_message").attr('hidden', false);
-          window.location.reload();
+          $("#alert_message_add").addClass('alert alert-success');
+          $("#alert_message_add").attr('hidden', false);
+          setTimeout(function () {
+            window.location.reload();
+          }, 500);
       },
       error: () => {
           console.log("Delete error");
@@ -128,11 +130,11 @@ $('#editCategoryBtn').on("click",function(){
         success: (data) => {
             console.log("Add success");
             $("#subCatagoryeEditModal").modal('hide');
-            $("#alert_message").addClass('alert alert-success');
-            $("#alert_message").attr('hidden', false);
-            // $("body").empty();
-            // $("body").html(data.html);
-            window.location.reload();
+            $("#alert_message_edit").addClass('alert alert-success');
+            $("#alert_message_edit").attr('hidden', false);
+            setTimeout(function () {
+                window.location.reload();
+              }, 500);
         },
         error: () => {
             console.log("Delete error");
@@ -158,9 +160,11 @@ $('#editCategoryBtn').on("click",function(){
       success: (data) => {
           console.log("Add success");
           $("#subCatagoryeDeleteModal").modal('hide');
-          $("#alert_message").addClass('alert alert-success');
-          $("#alert_message").attr('hidden', false);
-          window.location.reload();
+          $("#alert_message_delete").addClass('alert alert-success');
+          $("#alert_message_delete").attr('hidden', false);
+          setTimeout(function () {
+            window.location.reload();
+          }, 500);
       },
       error: () => {
           console.log("Delete error");
@@ -181,9 +185,11 @@ $('#editCategoryBtn').on("click",function(){
       success: (data) => {
           console.log("Add success");
           $("#parantCatagoryModal").modal('hide');
-          $("#alert_message").addClass('alert alert-success');
-          $("#alert_message").attr('hidden', false);
-          window.location.reload();
+          $("#alert_message_add").addClass('alert alert-success');
+          $("#alert_message_add").attr('hidden', false);
+          setTimeout(function () {
+            window.location.reload();
+          }, 500);
       },
       error: () => {
           console.log("Delete error");
